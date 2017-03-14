@@ -162,6 +162,7 @@ class diyCell:UICollectionViewCell{
             {
                 button.backgroundColor = UIColor.clear
             }
+            
         }
     }
 

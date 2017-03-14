@@ -37,6 +37,11 @@ extension UITextView
             self.attributedText = trM
             //回复光标所在的位置
             self.selectedRange = NSMakeRange((range.location)+1, 0)
+            
+            
+           //插入图片不会触发textview的代理方法textviewdidchange
+            delegate?.textViewDidChange!(self)
+            
         }
     }
     
